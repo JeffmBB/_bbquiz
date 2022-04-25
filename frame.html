@@ -1,0 +1,40 @@
+
+<html><head>
+<style>
+#outer{border:#f00 2px solid; background-color:#0f0; padding:5px 5px 5px 5px; }
+#title {font-size:14px;}
+.lesser {font-size:9px;}
+.clickish {text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<div id="outer">
+<p><span id="title">Bowling Fun Quiz!</span><BR>
+<span class="lesser" id="question"></span><BR>
+<span class="lesser" id="a1"></span><BR>
+<span class="lesser" id="a2"></span><BR>
+<span class="lesser" id="a3"></span><BR>
+<span class="lesser" id="a4"></span><BR>
+<span class="lesser clickish" id="go">Check your answer?</span><BR>
+<span class="lesser" id="answer"></span>
+</p>
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+  alert( "Hello, World!" );
+
+jQuery.getJSON('bowlingquiz.json', function(json) {
+  var thisquiz = json.bbquiz;
+  
+  alert( thisquiz[1] );
+
+}
+
+
+</script>
+</body>
+</html>
