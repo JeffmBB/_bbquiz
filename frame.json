@@ -21,13 +21,13 @@
 			"answer":"10 is the most common form in the U.S. but there variations with different numbers."
 		},
 		{
-			"question":"What is it called if you still have a pin or pins standing after you've finished bowling a single frame?",
+			"question":"What'ss it called if you still have a pin or pins standing after you've finished bowling a single frame?",
 			"a1":"closed frame",
 			"a2":"open frame",
 			"a3":"bad frame",
 			"a4":"spare frame",
 			"correct":"2",
-			"answer":"It is called an open frame."
+			"answer":"It'ss called an open frame."
 		},
 		{
 			"question":"Which hole in the ball is the most important according to the ball driller?",
@@ -39,7 +39,7 @@
 			"answer":"Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy."
 		},
 		{
-			"question":"What's is called when your ball hits the 1-3 pins for right handers, or the 1-2 pins for left handers, on the first ball?",
+			"question":"What's it called when your first ball hits the 1-3 pins for right-handers, or the 1-2 pins for left-handers?",
 			"a1":"a brooklyn",
 			"a2":"knee deep",
 			"a3":"a pocket",
