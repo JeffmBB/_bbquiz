@@ -9,9 +9,8 @@
 			"a3":"",
 			"a4":"",
 			"correct":"",
-			"atext":""
+			"answer":""
 		},
-
 		{
 			"question":"You've gotten your ball and you are standing at the top of the lane. How many pins will you be throwing at?",
 			"a1":"10",
@@ -19,7 +18,7 @@
 			"a3":"6",
 			"a4":"8",
 			"correct":"1",
-			"atext":"10 is the most common form in the U.S. but there variations with different numbers."
+			"answer":"10 is the most common form in the U.S. but there variations with different numbers."
 		},
 		{
 			"question":"What is it called if you still have a pin or pins standing after you've finished bowling a single frame?",
@@ -28,7 +27,7 @@
 			"a3":"bad frame",
 			"a4":"spare frame",
 			"correct":"2",
-			"atext":"It is called an open frame."
+			"answer":"It is called an open frame."
 		},
 		{
 			"question":"Which hole in the ball is the most important according to the ball driller?",
@@ -37,7 +36,7 @@
 			"a3":"Balance hole",
 			"a4":"Ring finger hole",
 			"correct":"1",
-			"atext":"Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy."
+			"answer":"Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy."
 		},
 		{
 			"question":"What's is called when your ball hits the 1-3 pins for right handers, or the 1-2 pins for left handers, on the first ball?",
@@ -46,7 +45,7 @@
 			"a3":"a pocket",
 			"a4":"balls deep",
 			"correct":"3",
-			"atext":"A pocket. A brooklyn is when your ball goes on the opposite side of these pins."
+			"answer":"A pocket. A brooklyn is when your ball goes on the opposite side of these pins."
 		},
 		{
 			"question":"If you foul on your first ball, you receive a second ball. On this ball you roll it and knock all the pins down, without fouling. This is called a what?",
@@ -55,7 +54,7 @@
 			"a3":"a strike",
 			"a4":"a tap",
 			"correct":"2",
-			"atext":"A spare. A strike is when you knock down all the pins on the first ball."
+			"answer":"A spare. A strike is when you knock down all the pins on the first ball."
 		},
 		{
 			"question":"What's the maximum weight (lbs) for bowling balls in standard 10-pin bowling?",
@@ -64,7 +63,7 @@
 			"a3":"12",
 			"a4":"13",
 			"correct":"2",
-			"atext":"A standard ball weighs no more than 16 lbs and has a smooth surface."
+			"answer":"A standard ball weighs no more than 16 lbs and has a smooth surface."
 		},
 		{
 			"question":"What's the greatest number of consecutive strikes bowled?",
@@ -73,7 +72,7 @@
 			"a3":"37",
 			"a4":"47",
 			"correct":"4",
-			"atext":"In May 2010, Tommy Gollick bowled 47 consecutive strikes."
+			"answer":"In May 2010, Tommy Gollick bowled 47 consecutive strikes."
 		},
 		{
 			"question":"A legal delivery is made when the ball crosses the foul line into where?",
@@ -82,7 +81,7 @@
 			"a3":"the other lane",
 			"a4":"the playing territory",
 			"correct":"4",
-			"atext":"A legal delivery is made when the ball leaves the bowler's possession and crosses the foul line into playing territory."
+			"answer":"A legal delivery is made when the ball leaves the bowler's possession and crosses the foul line into playing territory."
 		},
 		{
 			"question":"What's the highest number of 300 games by any player?",
@@ -91,7 +90,7 @@
 			"a3":"135",
 			"a4":"181",
 			"correct":"3",
-			"atext":"According to USBC, Fero Williams has played more than 135 300 games. And he's only 31 years old."
+			"answer":"According to USBC, Fero Williams has played more than 135 300 games. And he's only 31 years old."
 		},
 		{
 			"question":"The game is over and unfortunately you were unable to bowl a perfect game of 300. How many strikes would you have to hit in order to bowl a 300?",
@@ -100,7 +99,7 @@
 			"a3":"12",
 			"a4":"13",
 			"correct":"3",
-			"atext":"You would bowl 12 strikes because you get 2 extra balls if you bowl a strike in the tenth frame."
+			"answer":"You would bowl 12 strikes because you get 2 extra balls if you bowl a strike in the tenth frame."
 		},
 		{
 			"question":"If a bowler is not present, their score is their average less how many pins?",
@@ -109,7 +108,7 @@
 			"a3":"13",
 			"a4":"15",
 			"correct":"2",
-			"atext":"If a bowler is not present, their score is their average less 10 pins unless league rules state otherwise."
+			"answer":"If a bowler is not present, their score is their average less 10 pins unless league rules state otherwise."
 		},
 		{
 			"question":"What is the score when you spare in the first frame and then roll 11 strikes in a row?",
@@ -118,7 +117,7 @@
 			"a3":"279",
 			"a4":"286",
 			"correct":"2",
-			"atext":"A 290 is when you get any kind of spare in the first frame and follow it up with 11 strikes."
+			"answer":"A 290 is when you get any kind of spare in the first frame and follow it up with 11 strikes."
 		},
 		{
 			"question":"When was bowling possibly invented?",
@@ -127,7 +126,7 @@
 			"a3":"5200 BC",
 			"a4":"1366 AD",
 			"correct":"3",
-			"atext":"A British anthropologist discovered objects in a child's grave in Egypt dated 5200 BC that appeared to be a crude form of bowling."
+			"answer":"A British anthropologist discovered objects in a child's grave in Egypt dated 5200 BC that appeared to be a crude form of bowling."
 		},
 		{
 			"question":"Why are bowlers called keglers in Germany?",
@@ -136,7 +135,7 @@
 			"a3":"Greg said so",
 			"a4":"kegs (duh) are holy",
 			"correct":"2",
-			"atext":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers."
+			"answer":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers."
 		},
 		{
 			"question":"Where did a certain bowler drink too much while playing?",
@@ -145,7 +144,7 @@
 			"a3":"New York",
 			"a4":"Oregon",
 			"correct":"3",
-			"atext":"Rip Van Winkle drank with mysterious bowlers in New York's Catskill Mountains and woke up 20 years later."
+			"answer":"Rip Van Winkle drank with mysterious bowlers in New York's Catskill Mountains and woke up 20 years later."
 		},
 		{
 			"question":"Where is the world's largest bowlling alley?",
@@ -154,7 +153,7 @@
 			"a3":"Dubai",
 			"a4":"South Africa",
 			"correct":"2",
-			"atext":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes and opened in 1972."
+			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes and opened in 1972."
 		},
 		{
 			"question":"Some high-performance bowling balls have MB on the ball. What does MB stand for?",
@@ -163,7 +162,7 @@
 			"a3":"Marked Bias",
 			"a4":"Master Bias",
 			"correct":"2",
-			"atext":"Balls with asymmetric cores have the Mass Bias labeled on the ball. When drilling a ball, the position of the mass bias determines the ball's backend reaction also known as the shape of the hook."
+			"answer":"Balls with asymmetric cores have the Mass Bias labeled on the ball. When drilling a ball, the position of the mass bias determines the ball's backend reaction also known as the shape of the hook."
 		}
 
 	]
