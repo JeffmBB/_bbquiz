@@ -31,17 +31,26 @@ D. <span id="a4">4 asdfasdfasdfasdf</span></p>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
+
+var quiz;
+function populate(xx){
+  jQuery("#question").html(quiz[xx].question);
+  jQuery("#a1").html(quiz[xx].a1);
+  jQuery("#a2").html(quiz[xx].a2);
+  jQuery("#a3").html(quiz[xx].a3);
+  jQuery("#a4").html(quiz[xx].a4);
+  jQuery("#answer").html(""+ quiz[xx].answer +"");
+}  
+  
 jQuery.getJSON('frame.json', function(data) {
-  var quiz = data.bbquiz;
-  qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
-  jQuery("#question").html(quiz[qnum].question);
-  jQuery("#a1").html(quiz[qnum].a1);
-  jQuery("#a2").html(quiz[qnum].a2);
-  jQuery("#a3").html(quiz[qnum].a3);
-  jQuery("#a4").html(quiz[qnum].a4);
-  jQuery("#answer").html(""+ quiz[qnum].answer +"");
+  quiz = data.bbquiz;
 });
 
+qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
+populate(qnum);
+
+  
+  
 </script>
 
 </body>
