@@ -1,31 +1,31 @@
 
 <html><head>
 <style>
+p {}
 #outer{width:165px; border:#f00 2px solid; background-color:#0f0; padding:5px 5px 5px 5px; }
 #title {font-size:24px; padding-top:0px;}
-.lesser {font-size:16px;}
+.lesser {font-size:16px; padding:}
 .clickish {text-decoration:underline; cursor:pointer}
 </style>
 </head>
 <body>
 
 <div id="outer">
-<p><span id="title">Bowling Fun Quiz!</span><BR>
-<span class="lesser" id="question">X-If you foul on your first ball, you receive a second ball. On this ball you roll it and knock all the pins down, without fouling. This is called a what?</span><BR>
-<span class="lesser" id="a1">1 asdfasdfasdfasdf</span><BR>
-<span class="lesser" id="a2">2 asdfasdfasdfasdf</span><BR>
-<span class="lesser" id="a3">3 asdfasdfasdfasdf</span><BR>
-<span class="lesser" id="a4">4 asdfasdfasdfasdf</span><BR>
-<span class="lesser clickish" id="go">Check your answer?.</span><BR>
-<span class="lesser" id="answer">X-Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy.</span>
+<p id="title">Fun Quiz!</p>
+<p class="lesser"><span id="question">X-If you foul on your first ball, you receive a second ball. On this ball you roll it and knock all the pins down, without fouling. This is called a what?</span><BR>
+<span id="a1">1 asdfasdfasdfasdf</span><BR>
+<span id="a2">2 asdfasdfasdfasdf</span><BR>
+<span id="a3">3 asdfasdfasdfasdf</span><BR>
+<span id="a4">4 asdfasdfasdfasdf</span><BR>
+<span class="clickish" id="go">Check your answer?.</span></p>
+<p class="lesser" id="answer">X-Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy.</span>
 </p>
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
 
-  alert( "Hello, World!" );
-
+alert( "Hello, World!" );
 
 jQuery.getJSON('frame.json', function(json) {
   var thisquiz = json.bbquiz;
