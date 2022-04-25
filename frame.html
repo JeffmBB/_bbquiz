@@ -32,8 +32,12 @@ D. <span id="a4">MNOP</span></p>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
 
-var quiz, qnum;
-function populate(quiz,xx){
+  
+jQuery.getJSON('frame.json', function(data) {
+var quiz = data.bbquiz;
+var qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
+
+function populate(xx){
   jQuery("#question").html(quiz[xx].question);
   jQuery("#a1").html(quiz[xx].a1);
   jQuery("#a2").html(quiz[xx].a2);
@@ -41,13 +45,11 @@ function populate(quiz,xx){
   jQuery("#a4").html(quiz[xx].a4);
   jQuery("#answer").html(""+ quiz[xx].answer +"");
 }  
-  
-jQuery.getJSON('frame.json', function(data) {
-  quiz = data.bbquiz;
+
+populate(qnum);
+
 });
 
-qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
-populate(quiz,qnum);
 
   
   
