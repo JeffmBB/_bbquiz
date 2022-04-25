@@ -33,11 +33,12 @@ D. <span id="a4">4 asdfasdfasdfasdf</span></p>
 
 alert( "Hello, World!" );
 
-jQuery.getJSON('frame.json', function(json) {
-  var quiz = json.bbquiz;
-});
+jQuery.getJSON('frame.json', function(data) {
+  var quiz = data.bbquiz;
 
-  alert( bbquiz[1] );
+  alert( quiz[1] );
+
+});
 
 </script>
 
