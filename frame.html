@@ -2,69 +2,92 @@
 <html>
 <head>
 <style>
-  #answer {display:none;}
-  #showclick {display:inline;}
-  p {font-family: Arial, Helvetica, sans-serif;font-size:16px;}
+  #answerdiv {display:inline;}
+  #clickdiv {display:inline;}
+  p,#answerdiv {font-family: Arial, Helvetica, sans-serif;font-size:16px;}
   #quizgraphic {width:165px; padding:1px 1px 0px 1px;}
   #outer  {width:169px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:5px 5px 5px 5px; }
-  .answer { cursor:pointer;}
+  .answerp { cursor:pointer; }
+  #a1:hover,#a2:hover, #a3:hover,#a4:hover { font-weight:bold;} 
   .clickish {text-decoration:underline; cursor:pointer;}
 </style>
 </head>
 <body>
-
 <div id="outer">
-<center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
-
-<p>QUESTION: <span id="question">SORRY, QUIZ IS OFFLINE</p>
-
-<p class="answer">
-A. <span id="a1"></span><BR>
-B. <span id="a2"></span><BR>
-C. <span id="a3"></span><BR>
-D. <span id="a4"></span></p>
-  
-<p>
-<div id="showclick">Click the correct&nbsp;answer.</span></div>
-<div id="showanswer"><span id="rightwrong"></span> <id="answer"></span></div>
-  </p>
+  <center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
+    <p><strong>Question:</strong> <span id="question">SORRY, QUIZ IS OFFLINE</p>
+    <p class="answerp">
+      <span id="a1"></span><BR>
+      <span id="a2"></span><BR>
+      <span id="a3"></span><BR>
+      <span id="a4"></span>
+    </p>
+    <p>
+      <div id="clickdiv">Click the correct&nbsp;answer.</span></div>
+      <div id="answerdiv"><strong><span id="rightwrong"></span></strong>  <span id="thisanswer">SOMETHING BROKE</span><BR><BR>
+        <span id="getanother" class="clickish">Try another question!</span>
+      </div>
+    </p>
 </div>
-
+<!------------------------>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
 
-  
 jQuery.getJSON('frame.json', function(data) {
-var quiz = data.bbquiz;
+  var quiz = data.bbquiz;
+  var quizl = quiz.length-1; /* 18 records but last is index 17*/
+  var qnum;
 
 function populate(xx){
   jQuery("#question").html(quiz[xx].question);
-  jQuery("#a1").html(quiz[xx].a1);
-  jQuery("#a2").html(quiz[xx].a2);
-  jQuery("#a3").html(quiz[xx].a3);
-  jQuery("#a4").html(quiz[xx].a4);
-}  
+  jQuery("#a1").html("A. "+quiz[xx].a1);
+  jQuery("#a2").html("B. "+quiz[xx].a2);
+  jQuery("#a3").html("C. "+quiz[xx].a3);
+  jQuery("#a4").html("D. "+quiz[xx].a4);
+  jQuery("#thisanswer").html(quiz[xx].answer);
+}
 
-jQuery("#answer").click( function{
-alert(this.id);
-                        
-});
+function resetfonts(){
+  jQuery("#a1,#a2,#a3,#a4,#rightwrong").css({"font-weight":"normal","color":"#000"});
+  jQuery("#a1,#a2,#a3,#a4").hover(
+    function(){jQuery(this).css("font-weight","bold");
+  },
+    function(){ jQuery(this).css("font-weight","normal");
+  });
+}
 
-  
 function init(){
-  var qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
+  resetfonts();
+  document.getElementById("answerdiv").style.display="none";
+  document.getElementById("clickdiv").style.display="inline";
+  qnum = Math.floor( Math.random()*(quizl-1+1) )+1;
   populate(qnum);
 }  
+
 init();
 
-function getanother(){ init(); }
-
+jQuery("#a1,#a2,#a3,#a4").click( function(){
+  resetfonts();
+  var idnum=this.id.charAt(1);
+  var rw="Wrong!"; 
+  if(idnum==2){rw="Sorry!"}
+  if(idnum==3){rw="Incorrect!"}
+  if(idnum==4){rw="Nope!"}
+  if(quiz[qnum].correct==idnum){
+      rw="Right!";
+      jQuery("#a"+idnum+",#rightwrong").css("color","#29a329");
+    }else{
+      jQuery("#a"+idnum+",#rightwrong").css("color","#cc0000");
+  };
+  jQuery("#a"+idnum+" ,#rightwrong").css("font-weight","bold");  
+  document.getElementById("rightwrong").innerHTML=rw;
+  document.getElementById("clickdiv").style.display="none";
+  document.getElementById("answerdiv").style.display="inline";
 });
 
+jQuery("#getanother").click( function(){ init(); });  
 
-  
-  
+});//END OF JQUERY LOOP
 </script>
-
-</body>
+ </body>
 </html>
