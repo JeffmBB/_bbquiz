@@ -12,22 +12,22 @@
 			"answer":""
 		},
 		{
-			"question":"You've gotten your ball and you are standing at the top of the lane. How many pins will you be throwing at?",
+			"question":"You've gotten your ball and you are standing at the top of the lane. How many pins most commonly will you be throwing at?",
 			"a1":"10",
 			"a2":"12",
 			"a3":"6",
 			"a4":"8",
 			"correct":"1",
-			"answer":"10 is the most common form in the U.S. but there variations with different numbers."
+			"answer":"10 is the most common form in the U.S. but there are variations using different numbers."
 		},
 		{
-			"question":"What'ss it called if you still have a pin or pins standing after you've finished bowling a single frame?",
+			"question":"What is it called if you still have a pin or pins standing after you've finished bowling a single frame?",
 			"a1":"closed frame",
 			"a2":"open frame",
 			"a3":"bad frame",
 			"a4":"spare frame",
 			"correct":"2",
-			"answer":"It'ss called an open frame."
+			"answer":"It is called an open frame."
 		},
 		{
 			"question":"Which hole in the ball is the most important according to the ball driller?",
@@ -39,7 +39,7 @@
 			"answer":"Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy."
 		},
 		{
-			"question":"What's it called when your first ball hits the 1-3 pins for right-handers, or the 1-2 pins for left-handers?",
+			"question":"What's it called when your first ball hits the 1-3 pins for right handers, or the 1-2 pins for left handers?",
 			"a1":"a brooklyn",
 			"a2":"knee deep",
 			"a3":"a pocket",
@@ -66,7 +66,7 @@
 			"answer":"A standard ball weighs no more than 16 lbs and has a smooth surface."
 		},
 		{
-			"question":"What's the greatest number of consecutive strikes bowled?",
+			"question":"What's the greatest number of consecutive strikes bowled, ever?",
 			"a1":"19",
 			"a2":"28",
 			"a3":"37",
@@ -133,12 +133,12 @@
 			"a1":"Ich weiß nicht",
 			"a2":"bowling is holy",
 			"a3":"Greg said so",
-			"a4":"kegs (duh) are holy",
+			"a4":"kegs (duh)",
 			"correct":"2",
 			"answer":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers."
 		},
 		{
-			"question":"Where did a certain bowler drink too much while playing?",
+			"question":"Where did a certain, well-known bowler drink too much while playing?",
 			"a1":"New Jersey",
 			"a2":"Washington",
 			"a3":"New York",
