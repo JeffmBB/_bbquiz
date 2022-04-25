@@ -2,18 +2,18 @@
 <html>
 <head>
 <style>
-p {font-family: Arial, Helvetica, sans-serif;font-size:16px;}
-#quizgraphic {width:165px; padding:1px 1px 0px 1px;}
-#outer  {width:169px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:5px 5px 5px 5px; }
-.answer { cursor:pointer;}
-.clickish {text-decoration:underline; cursor:pointer;}
-#answer {display:inline;}
+  #answer {display:none;}
+  #showclick {display:inline;}
+  p {font-family: Arial, Helvetica, sans-serif;font-size:16px;}
+  #quizgraphic {width:165px; padding:1px 1px 0px 1px;}
+  #outer  {width:169px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:5px 5px 5px 5px; }
+  .answer { cursor:pointer;}
+  .clickish {text-decoration:underline; cursor:pointer;}
 </style>
 </head>
 <body>
 
 <div id="outer">
-
 <center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
 
 <p>QUESTION: <span id="question">SORRY, QUIZ IS OFFLINE</p>
@@ -24,9 +24,10 @@ B. <span id="a2"></span><BR>
 C. <span id="a3"></span><BR>
 D. <span id="a4"></span></p>
   
-<p><span class="lesser clickish" id="go">Click the correct&nbsp;answer.</span>
-<BR><strong><span id="answer"></span>
-</strong></p>
+<p>
+<div id="showclick">Click the correct&nbsp;answer.</span></div>
+<div id="showanswer"><span id="rightwrong"></span> <id="answer"></span></div>
+  </p>
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -35,7 +36,6 @@ D. <span id="a4"></span></p>
   
 jQuery.getJSON('frame.json', function(data) {
 var quiz = data.bbquiz;
-var qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
 
 function populate(xx){
   jQuery("#question").html(quiz[xx].question);
@@ -43,10 +43,21 @@ function populate(xx){
   jQuery("#a2").html(quiz[xx].a2);
   jQuery("#a3").html(quiz[xx].a3);
   jQuery("#a4").html(quiz[xx].a4);
-  jQuery("#answer").html(""+ quiz[xx].answer +"");
 }  
 
-populate(qnum);
+jQuery("#answer").click( function{
+alert(this.id);
+                        
+});
+
+  
+function init(){
+  var qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
+  populate(qnum);
+}  
+init();
+
+function getanother(){ init(); }
 
 });
 
