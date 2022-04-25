@@ -7,6 +7,7 @@ p {font-family: Arial, Helvetica, sans-serif;}
 #title  {font-size:24px; padding-top:-20px;}
 .lesser {font-size:16px; padding:}
 .clickish {text-decoration:underline; cursor:pointer}
+#answer {display:inline;}
 </style>
 </head>
 <body>
@@ -32,10 +33,13 @@ D. <span id="a4">4 asdfasdfasdfasdf</span></p>
 <script type="text/javascript">
 jQuery.getJSON('frame.json', function(data) {
   var quiz = data.bbquiz;
-  
-  alert( quiz.length );
-  alert( quiz[1].question );
-
+  qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
+  jQuery("#question").html(quiz[qnum].question);
+  jQuery("#a1").html(quiz[qnum].a1);
+  jQuery("#a2").html(quiz[qnum].a2);
+  jQuery("#a3").html(quiz[qnum].a3);
+  jQuery("#a4").html(quiz[qnum].a4);
+  jQuery("#answer").html(""+ quiz[qnum].answer +"");
 });
 
 </script>
