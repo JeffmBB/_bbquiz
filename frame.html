@@ -19,13 +19,13 @@ p {font-family: Arial, Helvetica, sans-serif;}
 <p class="lesser">QUESTION: <span id="question">QUIZ IS OFFLINE</p>
 
 <p class="lesser">
-A. <span id="a1">1 asdfasdfasdfasdf</span><BR>
-B. <span id="a2">2 asdfasdfasdfasdf</span><BR>
-C. <span id="a3">3 asdfasdfasdfasdf</span><BR>
-D. <span id="a4">4 asdfasdfasdfasdf</span></p>
+A. <span id="a1">ABCD</span><BR>
+B. <span id="a2">EFGH</span><BR>
+C. <span id="a3">IJKL</span><BR>
+D. <span id="a4">MNOP</span></p>
   
-<p><span class="lesser clickish" id="go">Check your answer?.</span>
-<BR><strong><span id="answer">X-Thumb hole. The thumb exits the ball before the fingers and if it comes out of the hole too early or late because of its shape or size it can ruin your accuracy.</span>
+<p><span class="lesser clickish" id="go">Click on the answer above.</span>
+<BR><strong><span id="answer"></span>
 </strong></p>
 </div>
 
@@ -33,7 +33,7 @@ D. <span id="a4">4 asdfasdfasdfasdf</span></p>
 <script type="text/javascript">
 
 var quiz, qnum;
-function populate(xx){
+function populate(quiz,xx){
   jQuery("#question").html(quiz[xx].question);
   jQuery("#a1").html(quiz[xx].a1);
   jQuery("#a2").html(quiz[xx].a2);
@@ -47,7 +47,7 @@ jQuery.getJSON('frame.json', function(data) {
 });
 
 qnum = Math.floor(Math.random() * (quiz.length - 1 + 1)) + 1;
-populate(qnum);
+populate(quiz,qnum);
 
   
   
