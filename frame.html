@@ -2,11 +2,11 @@
 <html>
 <head>
 <style>
-p {font-family: Arial, Helvetica, sans-serif;}
-#quizgraphic {width:163px; padding:2px 2px 2px 2px;}
+p {font-family: Arial, Helvetica, sans-serif;font-size:16px;}
+#quizgraphic {width:165px; padding:1px 1px 0px 1px;}
 #outer  {width:169px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:5px 5px 5px 5px; }
-.lesser {font-size:16px; padding:}
-.clickish {text-decoration:underline; cursor:pointer}
+.answer { cursor:pointer;}
+.clickish {text-decoration:underline; cursor:pointer;}
 #answer {display:inline;}
 </style>
 </head>
@@ -16,15 +16,15 @@ p {font-family: Arial, Helvetica, sans-serif;}
 
 <center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
 
-<p class="lesser">QUESTION: <span id="question">QUIZ IS OFFLINE</p>
+<p>QUESTION: <span id="question">SORRY, QUIZ IS OFFLINE</p>
 
-<p class="lesser">
-A. <span id="a1">ABCD</span><BR>
-B. <span id="a2">EFGH</span><BR>
-C. <span id="a3">IJKL</span><BR>
-D. <span id="a4">MNOP</span></p>
+<p class="answer">
+A. <span id="a1"></span><BR>
+B. <span id="a2"></span><BR>
+C. <span id="a3"></span><BR>
+D. <span id="a4"></span></p>
   
-<p><span class="lesser clickish" id="go"><center>Click the correct&nbsp;answer.</center></span>
+<p><span class="lesser clickish" id="go">Click the correct&nbsp;answer.</span>
 <BR><strong><span id="answer"></span>
 </strong></p>
 </div>
