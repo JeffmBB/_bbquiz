@@ -42,6 +42,7 @@ jQuery.getJSON('frame.json', function(data) {
   var quizl = quiz.length-1; /* e.g. 5 records but last is Index 4*/
   var qnum;
   var counter=0;
+  //counter=19; //testing
   var sortr=[];
 
   function shuffleArray(array){
@@ -75,10 +76,14 @@ function init(){
   document.getElementById("answerdiv").style.display="none";
   document.getElementById("clickdiv").style.display="inline";
   resetfonts();
-  if(counter>quizl){counter=0;} 
+  if(counter>quizl){
+    counter=0;
+  } 
   qnum = sortr[counter];
   populate(qnum);
+  //jQuery("#testr").html( counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; "+ sortr +"; "+quizl );
   counter++; 
+  //jQuery("#testr").html( jQuery("#testr").html() + ";; " + counter +" after the ++" );
 }  
 
 init();
