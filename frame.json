@@ -165,13 +165,13 @@
 			"answer":"Seven! Bingo, bling, blown, boing, lingo, login, and owing."
 		},
 		{
-			"question":"Which of these is NOT their word for bowling?",
-			"a1":"Ukrainian: боулінг",
-			"a2":"Finnish: keilailu",
-			"a3":"Hindi: samalaingik",
+			"question":"Which of these is NOT the word for bowling?",
+			"a1":"Italian: bowling",
+			"a2":"Finnish: bowling",
+			"a3":"Hungarian: bowling",
 			"a4":"French: bowling",
-			"correct":"3",
-			"answer":"The usual term in Hindi for bowling is pronounced BOLING. Samalaingik refers to a homosexual."
+			"correct":"2",
+			"answer":"The word in Finnish is keilailu."
 		},
 		{
 			"question":"Where did a certain, well-known bowler drink too much while playing?",
