@@ -147,13 +147,22 @@
 			"answer":"Rip Van Winkle drank with mysterious bowlers in New York's Catskill Mountains and woke up 20 years later."
 		},
 		{
-			"question":"Where is the world's largest bowlling alley?",
+			"question":"Where is the world's largest bowling alley?",
 			"a1":"USA",
 			"a2":"Japan",
 			"a3":"Dubai",
 			"a4":"South Africa",
 			"correct":"2",
-			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes and opened in 1972."
+			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes. By comparison, an average bowling alley has 26 lanes."
+		},
+		{
+			"question":"Where is the U.S.' largest bowling alley?",
+			"a1":"Minnesota",
+			"a2":"Massachusetts",
+			"a3":"Michigan",
+			"a4":"Missouri",
+			"correct":"3",
+			"answer":"Thunderbowl Lanes in Allen Park, Michigan has 90 lanes. By comparison, an average bowling alley has 26 lanes."
 		},
 		{
 			"question":"Some high-performance bowling balls have MB on the ball. What does MB stand for?",
