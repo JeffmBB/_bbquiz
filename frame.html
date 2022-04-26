@@ -34,17 +34,20 @@
     </p>
 </div>
 
-<!-- p id="testr"></p -->
+<!-- ==================== -->
+<!-- p id="testr">DELETE THIS</p -->
 <!------------------------>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
 
 jQuery.getJSON('frame.json', function(data) {
   var quiz = data.bbquiz;
-  var quizl = quiz.length-1; /* e.g. 5 records but last is Index 4*/
+  var quizl = quiz.length; /* e.g. 5 records but last is Index 4*/
   var qnum;
   var counter=0;
-  //counter=19; //testing
+  //===================================
+  //counter=18;  //testing
+  
   var sortr=[];
 
   function shuffleArray(array){
@@ -53,7 +56,9 @@ jQuery.getJSON('frame.json', function(data) {
       [array[i],array[j]]=[array[j],array[i]];
     }
   }
-  for(var x=1;x<=quizl+1;x++){sortr[x]=x;}
+  for(var x=0;x<=quizl;x++){
+    sortr[x]=x;
+  }
   shuffleArray(sortr); sortr = jQuery.grep(sortr,n=>n==0||n);
 
 function populate(xx){
@@ -75,38 +80,42 @@ function resetfonts(){
 }
 
 function init(){
+  if(counter >= quizl){counter=0;}
   document.getElementById("answerdiv").style.display="none";
   document.getElementById("clickdiv").style.display="inline";
   resetfonts();
-  if(counter>quizl){
-    counter=0;
-  } 
   qnum = sortr[counter];
   populate(qnum);
-  //jQuery("#testr").html( counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; "+ sortr +"; "+quizl );
-  counter++; 
-  //jQuery("#testr").html( jQuery("#testr").html() + ";; " + counter +" after the ++" );
+  //================================
+  //var ddd = counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; "+ sortr +"; "+quizl;
+
+  counter++;
+  //================================
+  //jQuery("#testr").html( ddd + ";<BR>" + counter +" after the ++" );
 }  
 
 init();
 
 jQuery("#a1,#a2,#a3,#a4").click( function(){
-  resetfonts();
+  document.getElementById("rightwrong").innerHTML="";
   var idnum=this.id.charAt(1);
-  var rw="Wrong!"; 
-  if(idnum==2){rw="Sorry!"}
-  if(idnum==3){rw="Incorrect!"}
-  if(idnum==4){rw="Nope!"}
-  if(quiz[qnum].correct==idnum){
-      rw="Right!";
-      jQuery("#a"+idnum+",#rightwrong").css("color","#29a329");
-    }else{
-      jQuery("#a"+idnum+",#rightwrong").css("color","#cc0000");
-  };
-  jQuery("#a"+idnum+",#rightwrong").css("font-weight","bold");  
-  document.getElementById("rightwrong").innerHTML=rw;
-  document.getElementById("clickdiv").style.display="none";
-  document.getElementById("answerdiv").style.display="inline";
+  resetfonts();
+  setTimeout( function(){
+    var rw="Wrong!"; 
+    if(idnum==2){rw="Sorry!"}
+    if(idnum==3){rw="Incorrect!"}
+    if(idnum==4){rw="Nope!"}
+    if(quiz[qnum].correct==idnum){
+        rw="Right!";
+        jQuery("#a"+idnum+",#rightwrong").css("color","#29a329");
+      }else{
+        jQuery("#a"+idnum+",#rightwrong").css("color","#cc0000");
+    };
+    jQuery("#a"+idnum+",#rightwrong").css("font-weight","bold");  
+    document.getElementById("rightwrong").innerHTML=rw;
+    document.getElementById("clickdiv").style.display="none";
+    document.getElementById("answerdiv").style.display="inline";
+  },500);
 });
 
 jQuery("#getanother").click( function(){ init(); });  
