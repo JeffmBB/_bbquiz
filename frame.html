@@ -39,8 +39,19 @@
 
 jQuery.getJSON('frame.json', function(data) {
   var quiz = data.bbquiz;
-  var quizl = quiz.length-1; /* 18 records but last is index 17*/
+  var quizl = quiz.length-1; /* e.g. 5 records but last is Index 4*/
   var qnum;
+  var counter=0;
+  var sortr=[];
+
+  function shuffleArray(array){
+    for (let i=array.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [array[i],array[j]]=[array[j],array[i]];
+    }
+  }
+  for(var x=1;x<=quizl+1;x++){sortr[x]=x;}
+  shuffleArray(sortr); sortr = jQuery.grep(sortr,n=>n==0||n);
 
 function populate(xx){
   jQuery("#question").html(quiz[xx].question);
@@ -61,11 +72,13 @@ function resetfonts(){
 }
 
 function init(){
-  resetfonts();
   document.getElementById("answerdiv").style.display="none";
   document.getElementById("clickdiv").style.display="inline";
-  qnum = Math.floor( Math.random()*(quizl-1+1) )+1;
+  resetfonts();
+  if(counter>quizl){counter=0;} 
+  qnum = sortr[counter];
   populate(qnum);
+  counter++; 
 }  
 
 init();
@@ -83,7 +96,7 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
     }else{
       jQuery("#a"+idnum+",#rightwrong").css("color","#cc0000");
   };
-  jQuery("#a"+idnum+" ,#rightwrong").css("font-weight","bold");  
+  jQuery("#a"+idnum+",#rightwrong").css("font-weight","bold");  
   document.getElementById("rightwrong").innerHTML=rw;
   document.getElementById("clickdiv").style.display="none";
   document.getElementById("answerdiv").style.display="inline";
@@ -91,7 +104,7 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
 
 jQuery("#getanother").click( function(){ init(); });  
 
-});//END OF JQUERY LOOP
+});//END OF MAIN JQUERY LOOP
 </script>
  </body>
 </html>
