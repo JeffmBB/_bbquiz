@@ -127,7 +127,25 @@
 			"a4":"1366 AD",
 			"correct":"3",
 			"answer":"A British anthropologist discovered objects in a child's grave in Egypt dated 5200 BC that appeared to be a crude form of bowling."
+		},		
+		{
+			"question":"Who is considered the greatest women's bowler of all time?",
+			"a1":"Portlandia",
+			"a2":"Jane Wagner",
+			"a3":"Lisa Wagner",
+			"a4":"Lisa Kudrow",
+			"correct":"3",
+			"answer":"Depends on how you count it. But at 32 titles, Lisa Wagner holds the record for most career victories of any PWBA Tour. She is also the first woman to win over $100,000 bowling."
 		},
+		{
+			"question":"Who is considered the greatest men's bowler of all time?",
+			"a1":"Jeff Stryker",
+			"a2":"Pete Weber",
+			"a3":"Kim Jong-Il",
+			"a4":"Walt Williams",
+			"correct":"4",
+			"answer":"Depends on how you count it. But Walter Ray Williams, Jr. lists 48 career titles and is the sport’s player with the most wins."
+		},		
 		{
 			"question":"Why are bowlers called keglers in Germany?",
 			"a1":"Ich weiß nicht",
@@ -151,7 +169,7 @@
 			"a1":"USA",
 			"a2":"Japan",
 			"a3":"Dubai",
-			"a4":"South Africa",
+			"a4":"North Korea",
 			"correct":"2",
 			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes. By comparison, an average bowling alley has 26 lanes."
 		},
