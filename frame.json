@@ -154,7 +154,16 @@
 			"a4":"kegs (duh)",
 			"correct":"2",
 			"answer":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers."
-		},
+		},		
+		{
+			"question":"Do you play Wordle? How many 5-letter words can you make from b-o-w-l-i-n-g?",
+			"a1":"five",
+			"a2":"seven",
+			"a3":"nine",
+			"a4":"eleven",
+			"correct":"2",
+			"answer":"Seven! Bingo, bling, blown, boing, lingo, login, and owing."
+		},		
 		{
 			"question":"Where did a certain, well-known bowler drink too much while playing?",
 			"a1":"New Jersey",
@@ -174,7 +183,7 @@
 			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes. By comparison, an average bowling alley has 26 lanes."
 		},
 		{
-			"question":"Where is the U.S.' largest bowling alley?",
+			"question":"Where is the U.S.' largest bowling alley? (HINT: begins with M)",
 			"a1":"Minnesota",
 			"a2":"Massachusetts",
 			"a3":"Michigan",
