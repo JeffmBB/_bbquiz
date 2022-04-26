@@ -34,7 +34,7 @@
     </p>
 </div>
 
-<!-- ==================== -->
+<!-- ======================================= -->
 <!-- p id="testr">DELETE THIS</p -->
 <!------------------------>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -45,18 +45,15 @@ jQuery.getJSON('frame.json', function(data) {
   var quizl = quiz.length; /* e.g. 5 records but last is Index 4*/
   var qnum;
   var counter=0;
-  //===================================
-  //counter=18;  //testing
-  
-  var sortr=[];
 
+  var sortr=[];
   function shuffleArray(array){
     for (let i=array.length-1;i>0;i--){
       const j=Math.floor(Math.random()*(i+1));
       [array[i],array[j]]=[array[j],array[i]];
     }
   }
-  for(var x=0;x<=quizl;x++){
+  for(var x=0;x<quizl;x++){
     sortr[x]=x;
   }
   shuffleArray(sortr); sortr = jQuery.grep(sortr,n=>n==0||n);
@@ -87,7 +84,7 @@ function init(){
   qnum = sortr[counter];
   populate(qnum);
   //================================
-  //var ddd = counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; "+ sortr +"; "+quizl;
+  //var ddd = counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; ["+ sortr +"]; quizl:"+quizl;
 
   counter++;
   //================================
