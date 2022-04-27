@@ -3,15 +3,6 @@
 	"version":"jm.01.20220421",
 	"bbquiz": [
 		{
-			"question":"",
-			"a1":"",
-			"a2":"",
-			"a3":"",
-			"a4":"",
-			"correct":"",
-			"answer":""
-		},
-		{
 			"question":"You've gotten your ball and you are standing at the top of the lane. How many pins most commonly will you be throwing at?",
 			"a1":"10",
 			"a2":"12",
@@ -49,26 +40,26 @@
 		},
 		{
 			"question":"If you foul on your first ball, you receive a second ball. On this ball you roll it and knock all the pins down, without fouling. This is called a what?",
-			"a1":"a chop",
+			"a1":"a strike",
 			"a2":"a spare",
-			"a3":"a strike",
-			"a4":"a tap",
+			"a3":"a tap",
+			"a4":"a no-tap",
 			"correct":"2",
 			"answer":"A spare. A strike is when you knock down all the pins on the first ball."
 		},
 		{
-			"question":"What's the maximum weight (lbs) for bowling balls in standard 10-pin bowling?",
-			"a1":"15",
-			"a2":"16",
-			"a3":"12",
-			"a4":"13",
-			"correct":"2",
+			"question":"What's the maximum weight for bowling balls in standard 10-pin bowling?",
+			"a1":"13 lbs",
+			"a2":"15.5 lbs",
+			"a3":"16 lbs",
+			"a4":"16.5 lbs",
+			"correct":"3",
 			"answer":"A standard ball weighs no more than 16 lbs and has a smooth surface."
 		},
 		{
 			"question":"What's the greatest number of consecutive strikes bowled, ever?",
-			"a1":"19",
-			"a2":"28",
+			"a1":"28",
+			"a2":"36",
 			"a3":"37",
 			"a4":"47",
 			"correct":"4",
@@ -88,9 +79,27 @@
 			"a1":"57",
 			"a2":"102",
 			"a3":"135",
-			"a4":"181",
+			"a4":"151",
 			"correct":"3",
-			"answer":"According to USBC, Fero Williams has played more than 135 300 games. And he's only 31 years old."
+			"answer":"As of 2018, Fero Williams had bowled over 135 300 games -- by age 31."
+		},	
+		{
+			"question":"Bowling pins three on one side, two on the other is called a...",
+			"a1":"Top Heavy",
+			"a2":"Greek Church",
+			"a3":"Bottom Heavy",
+			"a4":"Turkish Church",
+			"correct":"2",
+			"answer":"It is called a Greek Church, and it has an average 0.3% spare rate."
+		},
+		{
+			"question":"If a gutter ball somehow comes back out and knocks pins down, what then?",
+			"a1":"Group high-fives",
+			"a2":"Doesn't count",
+			"a3":"Score the pins",
+			"a4":"Get a free throw",
+			"correct":"2",
+			"answer":"Any pins knocked over will not be scored. This is because the gutter is considered out of bounds and once the ball is out of bounds, it cannot come back in."
 		},
 		{
 			"question":"The game is over and unfortunately you were unable to bowl a perfect game of 300. How many strikes would you have to hit in order to bowl a 300?",
@@ -143,8 +152,8 @@
 			"a2":"Pete Weber",
 			"a3":"Kim Jong-Il",
 			"a4":"Walt Williams",
-			"correct":"4",
-			"answer":"Depends on how you count it. But Walter Ray Williams, Jr. lists 48 career titles and is the sport’s player with the most wins."
+			"correct":"2",
+			"answer":"Depends on how you count it. But Pete Weber has won 37 PBA tour titles, 10 major PBA titles, 5 US Open titles, and completed the Triple Crown twice (1989 and 2013)."
 		},		
 		{
 			"question":"Why are bowlers called keglers in Germany?",
@@ -189,7 +198,7 @@
 			"a3":"Dubai",
 			"a4":"North Korea",
 			"correct":"2",
-			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes. By comparison, an average bowling alley has 26 lanes."
+			"answer":"The Inazawa Grand Bowl in Nagoya, Japan has 116 lanes spanning 650 feet -- over 2 football fields. By comparison, an average bowling alley has 26 lanes. <a href='https://lh5.googleusercontent.com/p/AF1QipNf9_pa7Zzv7iEfUONuyJWuGso2yRoKg7zcHhHY=w1280-h300-k-n' target='_blank'>See a photo of Inazawa Grand&nbsp;Bowl.</a>"
 		},
 		{
 			"question":"Where is the U.S.' largest bowling alley? (HINT: begins with M)",
