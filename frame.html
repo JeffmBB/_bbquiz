@@ -52,7 +52,7 @@ jQuery.getJSON('frame.json', function(data) {
   var quiz = data.bbquiz;
   var quizl = quiz.length; /* e.g. 5 records but last is Index 4*/
   var qnum;
-  var counter=0;
+  var counter=0; var ddd;
 
   var sortr=[];
   function shuffleArray(array){
@@ -91,13 +91,9 @@ function init(){
   resetfonts();
   qnum = sortr[counter];
   populate(qnum);
-
-  //================================
-  //var ddd = counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; ["+ sortr +"]; quizl:"+quizl;
-
+  ddd = "\nnquizl:" + quizl + "\n["+ sortr +"]\n" + counter +":"+ sortr[counter] + ", A1="+ quiz[sortr[counter]].a1;
   counter++;
-  //================================
-  //jQuery("#testr").html( ddd + ";<BR>" + counter +" after the ++" );
+  ddd+= "\nafter++= " + counter +": "+sortr[counter];
 }
 
 init();
@@ -127,8 +123,7 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
 jQuery("#getanother").click( function(){ init(); });
 
 jQuery("#quizgraphic").click( function(){
-  var ddd = counter +": "+ sortr[counter] +";\n"+ quiz[sortr[counter]].a1 +";\n["+ sortr +"];\nquizl: "+quizl;
-  alert( ddd + ";\n" + counter +" after ++" );
+  alert(ddd);
  });
 
 });//END OF MAIN JQUERY LOOP
