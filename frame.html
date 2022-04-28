@@ -103,10 +103,10 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
   var idnum=this.id.charAt(1);
   resetfonts();
   setTimeout( function(){
-    var rw="Oh, please!";
+    var rw="Ha! No.";
     if(idnum==2){rw="Sorry!"}
     if(idnum==3){rw="Incorrect!"}
-    if(idnum==4){rw="Nope!"}
+    if(idnum==4){rw="Wrong!"}
     if(quiz[qnum].correct==idnum){
         rw="Right!";
         jQuery("#a"+idnum+",#rightwrong").css("color","#29a329");
