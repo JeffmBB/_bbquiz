@@ -21,7 +21,6 @@
   #previous {left:2px;}
   #nextious {right:2px;}
   #nextword {display:none; bottom:3px; right:20px; color:#777;}
-
   #clickdiv {animation-name: effect1;animation-duration: 1s;animation-iteration-count: 2;animation-delay: 5s;}
   @keyframes effect1 {50% {color:#f50000;}}
   #nextword {animation-name: effect2;animation-duration: 2s;animation-iteration-count: 2;animation-delay: 5s;}
@@ -31,18 +30,14 @@
 </head>
 <body>
 <div id="outer">
-
     <center><img id="quizgraphic" src="quizgraphic2b.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
-
     <p id="questionp"><strong>Question:</strong> <span id="question"><BR><i>Loading...</i></span></p>
-
     <p class="answerp">
       <div class="aspacing" id="a1"></div><BR>
       <div class="aspacing" id="a2"></div><BR>
       <div class="aspacing" id="a3"></div><BR>
       <div class="aspacing" id="a4"></div>
     </p>
-
     <p id="clickpdiv">
       <div id="clickdiv"><i>Click the correct&nbsp;answer.</i></div>
       <div id="answerdiv">
@@ -53,20 +48,14 @@
     <span id="previous"><img src="previousarrow.png" alt="previous"></span>
        <span id="nextious"><span id="nextword"><strong><i>Next</i></strong></span><img src="nextiousarrow.png" alt="next"></span>
 </div>
-
-<!-- ======================================= -->
-<!-- p id="testr">DELETE THIS</p -->
-
 <!------------------------>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
-
 jQuery.getJSON('frame.json', function(data) {
   var quiz = data.bbquiz;
-  var quizl = quiz.length; /* e.g. 5 records but last is Index 4*/
+  var quizl = quiz.length;
   var qnum;
   var counter=0; var ddd;
-
   var sortr=[];
   function shuffleArray(array){
     for (let i=array.length-1;i>0;i--){
@@ -78,7 +67,6 @@ jQuery.getJSON('frame.json', function(data) {
     sortr[x]=x;
   }
   shuffleArray(sortr); sortr = jQuery.grep(sortr,n=>n==0||n);
-
 function populate(xx){
   jQuery("#question").html(quiz[xx].question);
   jQuery("#a1").html("A. "+quiz[xx].a1);
@@ -105,12 +93,8 @@ function init(){
   qnum = sortr[counter];
   populate(qnum);
   ddd = "\nnquizl:" + quizl + "\n["+ sortr +"]\n" + counter +":"+ sortr[counter] + ", A1="+ quiz[sortr[counter]].a1;
-  //counter++;
 }
-
-//LOAD FOR FIRST RUN
 init();
-
 jQuery("#a1,#a2,#a3,#a4").click( function(){
   document.getElementById("rightwrong").innerHTML="";
   var idnum=this.id.charAt(1);
@@ -133,22 +117,15 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
     document.getElementById("nextword").style.display="inline";
   },500);
 });
-
 jQuery("#nextious").click( function(){
-  counter++;
-  if(counter > quizl-1){counter=0;}
+  counter++; if(counter > quizl-1){counter=0;}
   init();
 });
-
 jQuery("#previous").click( function(){
-  counter--;
-  if(counter < 0){ counter=quizl-1; }
+  counter--; if(counter < 0){counter=quizl-1;}
   init();
 });
-
-//======================
-jQuery("#quizgraphic").click( function(){ alert(ddd); });
-
+//jQuery("#quizgraphic").click( function(){ alert(ddd); });
 });//END OF MAIN JQUERY LOOP
 </script>
  </body>
