@@ -6,32 +6,39 @@
   https://raw.githubusercontent.com/jeffmbb/bbquiz/master/frame.html
 -->
 <style>
+  #outer  {width:144px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:2px 2px 2px 2px; }
+  #quizgraphic {width:142px; padding:1px 1px 0px 1px;}
+  #a1:hover,#a2:hover, #a3:hover,#a4:hover { font-weight:bold;}
+  .clickish {text-decoration:underline; cursor:pointer;}
+  #questionp {margin: 2px 0px 5px 0px;}
   #answerdiv {display:inline;}
   #clickdiv {display:inline;}
   p,#answerdiv,#getanother,#clickdiv,div {font-family: Arial, Helvetica, sans-serif;font-size:12px;}
-  #quizgraphic {width:140px; padding:1px 1px 0px 1px;}
-  #outer  {width:144px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:2px 2px 2px 2px; }
-  .answerp { cursor:pointer; }
-  #a1:hover,#a2:hover, #a3:hover,#a4:hover { font-weight:bold;}
-  .clickish {text-decoration:underline; cursor:pointer;}
+  .answerp { cursor:pointer; margin-top: 17px;}
+  .middlea { margin-top:-8px; margin-bottom:-5px;}
 </style>
 </head>
 <body>
 <div id="outer">
-  <center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
-    <p><strong>Question:</strong> <span id="question">SORRY, QUIZ IS OFFLINE</span></p>
+
+    <center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
+
+    <p id="questionp"><strong>Question:</strong> <span id="question"><BR><i>Loading...</i></span></p>
+
     <p class="answerp">
-      <span id="a1"></span><BR>
-      <span id="a2"></span><BR>
-      <span id="a3"></span><BR>
-      <span id="a4"></span>
+      <div class="clickspace middlea" id="a1"></div><BR>
+      <div class="clickspace middlea" id="a2"></div><BR>
+      <div class="clickspace middlea" id="a3"></div><BR>
+      <div class="clickspace middlea" id="a4"></div>
     </p>
-    <p>
-      <div id="clickdiv">Click the correct&nbsp;answer.</div>
-      <div id="answerdiv"><strong><span id="rightwrong"></span></strong>  <span id="thisanswer"></span><BR><BR>
-        <span id="getanother" class="clickish">Try another question!</span>
+
+    <p id="clickpdiv">
+      <div id="clickdiv"><i>Click the correct&nbsp;answer.</i></div>
+      <div id="answerdiv"><strong><i><span id="rightwrong"></span></i></strong>  <span id="thisanswer"></span>
+          <BR><BR><span id="getanother" class="clickish"><i>Try another question!</i></span>
       </div>
     </p>
+
 </div>
 
 <!-- ======================================= -->
@@ -100,7 +107,7 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
   var idnum=this.id.charAt(1);
   resetfonts();
   setTimeout( function(){
-    var rw="Wrong!";
+    var rw="Oh, please!";
     if(idnum==2){rw="Sorry!"}
     if(idnum==3){rw="Incorrect!"}
     if(idnum==4){rw="Nope!"}
