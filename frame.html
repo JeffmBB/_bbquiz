@@ -1,8 +1,8 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- 
-  https://jeffmbb.github.io/bbquiz/frame.html 
+<!--
+  https://jeffmbb.github.io/bbquiz/frame.html
   https://raw.githubusercontent.com/jeffmbb/bbquiz/master/frame.html
 -->
 <style>
@@ -12,14 +12,14 @@
   #quizgraphic {width:140px; padding:1px 1px 0px 1px;}
   #outer  {width:144px; border:#e6e6e6 3px solid; background-color:#e6f2ff; padding:2px 2px 2px 2px; }
   .answerp { cursor:pointer; }
-  #a1:hover,#a2:hover, #a3:hover,#a4:hover { font-weight:bold;} 
+  #a1:hover,#a2:hover, #a3:hover,#a4:hover { font-weight:bold;}
   .clickish {text-decoration:underline; cursor:pointer;}
 </style>
 </head>
 <body>
 <div id="outer">
   <center><img id="quizgraphic" src="quizgraphic.jpg" alt="Bridgetown Invitational Fun Quiz"></center>
-    <p><strong>Question:</strong> <span id="question">SORRY, QUIZ IS OFFLINE</p>
+    <p><strong>Question:</strong> <span id="question">SORRY, QUIZ IS OFFLINE</span></p>
     <p class="answerp">
       <span id="a1"></span><BR>
       <span id="a2"></span><BR>
@@ -27,8 +27,8 @@
       <span id="a4"></span>
     </p>
     <p>
-      <div id="clickdiv">Click the correct&nbsp;answer.</span></div>
-      <div id="answerdiv"><strong><span id="rightwrong"></span></strong>  <span id="thisanswer">SOMETHING BROKE</span><BR><BR>
+      <div id="clickdiv">Click the correct&nbsp;answer.</div>
+      <div id="answerdiv"><strong><span id="rightwrong"></span></strong>  <span id="thisanswer"></span><BR><BR>
         <span id="getanother" class="clickish">Try another question!</span>
       </div>
     </p>
@@ -36,6 +36,7 @@
 
 <!-- ======================================= -->
 <!-- p id="testr">DELETE THIS</p -->
+
 <!------------------------>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
@@ -83,13 +84,14 @@ function init(){
   resetfonts();
   qnum = sortr[counter];
   populate(qnum);
+
   //================================
   //var ddd = counter +"; "+ sortr[counter] +"; "+ quiz[sortr[counter]].a1 +"; ["+ sortr +"]; quizl:"+quizl;
 
   counter++;
   //================================
   //jQuery("#testr").html( ddd + ";<BR>" + counter +" after the ++" );
-}  
+}
 
 init();
 
@@ -98,7 +100,7 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
   var idnum=this.id.charAt(1);
   resetfonts();
   setTimeout( function(){
-    var rw="Wrong!"; 
+    var rw="Wrong!";
     if(idnum==2){rw="Sorry!"}
     if(idnum==3){rw="Incorrect!"}
     if(idnum==4){rw="Nope!"}
@@ -108,14 +110,19 @@ jQuery("#a1,#a2,#a3,#a4").click( function(){
       }else{
         jQuery("#a"+idnum+",#rightwrong").css("color","#cc0000");
     };
-    jQuery("#a"+idnum+",#rightwrong").css("font-weight","bold");  
+    jQuery("#a"+idnum+",#rightwrong").css("font-weight","bold");
     document.getElementById("rightwrong").innerHTML=rw;
     document.getElementById("clickdiv").style.display="none";
     document.getElementById("answerdiv").style.display="inline";
   },500);
 });
 
-jQuery("#getanother").click( function(){ init(); });  
+jQuery("#getanother").click( function(){ init(); });
+
+jQuery("#quizgraphic").click( function(){
+  var ddd = counter +": "+ sortr[counter] +";\n"+ quiz[sortr[counter]].a1 +";\n["+ sortr +"];\nquizl: "+quizl;
+  alert( ddd + ";\n" + counter +" after ++" );
+ });
 
 });//END OF MAIN JQUERY LOOP
 </script>
