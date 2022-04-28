@@ -1,9 +1,8 @@
-
 {
 	"version":"jm.01.20220421",
 	"bbquiz": [
 		{
-			"question":"You've gotten your ball and you are standing at the top of the lane. How many pins most commonly will you be throwing at?",
+			"question":"You just got your ball. If you're at the <i>top of the lane</i>, how many pins most commonly will you be throwing at?",
 			"a1":"10",
 			"a2":"12",
 			"a3":"6",
@@ -39,7 +38,7 @@
 			"answer":"A pocket. A brooklyn is when your ball goes on the opposite side of these pins."
 		},
 		{
-			"question":"If you foul on your first ball, you receive a second ball. On this ball you roll it and knock all the pins down, without fouling. This is called a what?",
+			"question":"If you foul on your first ball, you receive a second ball. On this ball you roll it and knock all the pins down, without fouling. This is called a <i>what</i>?",
 			"a1":"a strike",
 			"a2":"a spare",
 			"a3":"a tap",
@@ -49,7 +48,7 @@
 		},
 		{
 			"question":"What's the maximum weight for bowling balls in standard 10-pin bowling?",
-			"a1":"13 lbs",
+			"a1":"15 lbs",
 			"a2":"15.5 lbs",
 			"a3":"16 lbs",
 			"a4":"16.5 lbs",
@@ -63,10 +62,10 @@
 			"a3":"37",
 			"a4":"47",
 			"correct":"4",
-			"answer":"In May 2010, Tommy Gollick bowled 47 consecutive strikes."
+			"answer":"In May 2010, Tommy Gollick bowled 47 consecutive strikes. He stopped only because his game was over."
 		},
 		{
-			"question":"A legal delivery is made when the ball crosses the foul line into where?",
+			"question":"A legal delivery is made when the ball crosses the foul line into <i>where</i>?",
 			"a1":"the parking lot",
 			"a2":"the restroom",
 			"a3":"the other lane",
@@ -82,9 +81,9 @@
 			"a4":"151",
 			"correct":"3",
 			"answer":"As of 2018, Fero Williams had bowled over 135 300 games -- by age 31."
-		},	
+		},
 		{
-			"question":"Bowling pins three on one side, two on the other is called a...",
+			"question":"Knocking down three pins on one side, two on the other is called a...",
 			"a1":"Top Heavy",
 			"a2":"Greek Church",
 			"a3":"Bottom Heavy",
@@ -97,7 +96,7 @@
 			"a1":"Group high-fives",
 			"a2":"Doesn't count",
 			"a3":"Score the pins",
-			"a4":"Get a free throw",
+			"a4":"Forfeit your turn",
 			"correct":"2",
 			"answer":"Any pins knocked over will not be scored. This is because the gutter is considered out of bounds and once the ball is out of bounds, it cannot come back in."
 		},
@@ -117,7 +116,7 @@
 			"a3":"13",
 			"a4":"15",
 			"correct":"2",
-			"answer":"If a bowler is not present, their score is their average less 10 pins unless league rules state otherwise."
+			"answer":"If a bowler is not present, their score is their average less 10 pins (unless league rules state otherwise)."
 		},
 		{
 			"question":"What is the score when you spare in the first frame and then roll 11 strikes in a row?",
@@ -136,7 +135,7 @@
 			"a4":"1366 AD",
 			"correct":"3",
 			"answer":"A British anthropologist discovered objects in a child's grave in Egypt dated 5200 BC that appeared to be a crude form of bowling."
-		},		
+		},
 		{
 			"question":"Who is considered the greatest women's bowler of all time?",
 			"a1":"Portlandia",
@@ -154,18 +153,18 @@
 			"a4":"Walt Williams",
 			"correct":"2",
 			"answer":"Depends on how you count it. But Pete Weber has won 37 PBA tour titles, 10 major PBA titles, 5 US Open titles, and completed the Triple Crown twice (1989 and 2013)."
-		},		
+		},
 		{
-			"question":"Why are bowlers called keglers in Germany?",
+			"question":"Why are bowlers called <i>keglers</i> in Germany?",
 			"a1":"Ich weiß nicht",
 			"a2":"God said so",
 			"a3":"Greg said so",
 			"a4":"kegs (duh)",
 			"correct":"2",
 			"answer":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers."
-		},		
+		},
 		{
-			"question":"Do you play Wordle? How many 5-letter words can you make from b-o-w-l-i-n-g?",
+			"question":"Ever heard of Wordle? How many 5-letter words can you make from b-o-w-l-i-n-g?",
 			"a1":"five",
 			"a2":"seven",
 			"a3":"nine",
@@ -174,13 +173,13 @@
 			"answer":"Seven: bingo, bling, blown, boing, lingo, login, and owing."
 		},
 		{
-			"question":"Which of these is NOT the word for bowling?",
+			"question":"Which of these is <i>not</i> the word for bowling?",
 			"a1":"Italian: bowling",
 			"a2":"Finnish: bowling",
 			"a3":"Hungarian: bowling",
 			"a4":"French: bowling",
 			"correct":"2",
-			"answer":"The word in Finnish is keilailu."
+			"answer":"The word in Finnish is <i>keilailu</i>."
 		},
 		{
 			"question":"Where did a certain, well-known bowler drink too much while playing?",
@@ -210,7 +209,7 @@
 			"answer":"Thunderbowl Lanes in Allen Park, Michigan has 90 lanes. By comparison, an average bowling alley has 26 lanes."
 		},
 		{
-			"question":"Some high-performance bowling balls have MB on the ball. What does MB stand for?",
+			"question":"Some high-performance bowling balls have &quot;MB&quot; on the ball. What does &quot;MB&quot; stand for?",
 			"a1":"Major Bias",
 			"a2":"Mass Bias",
 			"a3":"Marked Bias",
@@ -221,4 +220,3 @@
 
 	]
 }
-
