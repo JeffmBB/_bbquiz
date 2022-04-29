@@ -2,15 +2,6 @@
 	"version":"jm.01.20220421",
 	"bbquiz": [
 		{
-			"question":"You just got your ball. If you're at the <i>top of the lane</i>, how many pins most commonly will you be throwing at?",
-			"a1":"10",
-			"a2":"12",
-			"a3":"6",
-			"a4":"8",
-			"correct":"1",
-			"answer":"10 is the most common form in the U.S. but there are variations using different numbers."
-		},
-		{
 			"question":"What is it called if you still have a pin or pins standing after you've finished bowling a single frame?",
 			"a1":"closed frame",
 			"a2":"open frame",
