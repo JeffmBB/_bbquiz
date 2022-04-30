@@ -19,17 +19,16 @@
   #previous, #nextious, #nextword {position:absolute; bottom:0px; cursor:pointer; margin-top:20px;}
   #previous {left:2px;}
   #nextious {right:2px;}
-  #nextword {display:none; bottom:3px; fright:20px; color:#777;}
+  #nextword {display:none; bottom:3px; right:20px; color:#777;}
   #clickdiv {animation-name: effect1;animation-duration: 1s;animation-iteration-count: 2;animation-delay: 5s;}
 
   @keyframes effect1 {50% {color:#f50000;}}
   #nextword {animation-name: effect2;animation-duration: 2s;animation-iteration-count: 2;animation-delay: 5s;}
   @keyframes effect2 {100% {color:#f50000;}}
-
-  @media (max-width: 420px) {
-    #outer {width:99%;}
+  @media (max-width: 620px) {
+    #outer {width:99%;} #quizgraphic {width:50%;}
+    p,#answerdiv,#answerp, .aspacing, #clickdiv {font-size:16px;}
   }
-
 </style>
 </head>
 <body>
