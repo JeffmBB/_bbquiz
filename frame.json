@@ -1,11 +1,12 @@
+
 {
-	"version":"jm.01.20220421",
+	"version":"jm.01.20230127",
 	"bbquiz": [
 		{
 			"question":"What is it called if you still have a pin or pins standing after you've finished bowling a single frame?",
 			"a1":"closed frame",
 			"a2":"open frame",
-			"a3":"bad frame",
+			"a3":"extra frame",
 			"a4":"spare frame",
 			"correct":"2",
 			"answer":"It is called an open frame."
@@ -152,7 +153,7 @@
 			"a3":"Greg said so",
 			"a4":"kegs (duh)",
 			"correct":"2",
-			"answer":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers."
+			"answer":"Bowling began in Germany in 400 AD as a ritual to cleanse oneself from sin by rolling a rock into a club (kegel) representing the Heathen, resulting in bowlers being called keglers. <a href='https://en.wikipedia.org/wiki/Bowling#Ancient_history' target='_blank'>?</a>"
 		},
 		{
 			"question":"Ever heard of Wordle? How many 5-letter words can you make from b-o-w-l-i-n-g?",
@@ -211,3 +212,4 @@
 
 	]
 }
+
